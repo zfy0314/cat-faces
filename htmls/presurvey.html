@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+        h2 { text-align: center; }
+        p { text-align: left; margin-left: 20px; }
+        input { margin-left: 20px; }
+        </style>
+    </head>
+    <body>
+        <h2> Background Survey </h2>
+        <form action="submit_background", method="POST">
+
+            <p> What is your background in cognitive psychology / cognitive science? </p>
+            <input type="radio" required id="psy_none" name="cog_background", value="none"><label for="psy_none"> None </label><br>
+            <input type="radio" required id="psy_pop" name="cog_background", value="pop"><label for="psy_none"> Watched some pop science videos / books </label><br>
+            <input type="radio" required id="psy_intro" name="cog_background", value="intro"><label for="psy_none"> Taken some introduction level courses in college </label><br>
+            <input type="radio" required id="psy_elective" name="cog_background", value="elective"><label for="psy_none"> Taken some elective level courses in college </label><br>
+            <input type="radio" required id="psy_advance" name="cog_background", value="advance"><label for="psy_none"> Beyond undergraduate level  </label><br>
+
+            <p> Do you keep a pet? </p>
+            <input type="radio" required id="cat_none" name="pet_cat", value="none"><label for="cat_none"> I don't interact with pet animals regularly </label><br>
+            <input type="radio" required id="cat_interact" name="pet_cat", value="interact"><label for="cat_interact"> I don't have pet in my household, but I interact with pet animals regularly </label><br>
+            <input type="radio" required id="cat_used" name="pet_cat", value="used"><label for="cat_used"> I used have pet(s) in my household </label><br>
+            <input type="radio" required id="cat_one" name="pet_cat", value="one"><label for="cat_one"> I have one pet in my household </label><br>
+            <input type="radio" required id="cat_multiple" name="pet_cat", value="multiple"><label for="cat_multiple"> I have multiple pets in my household </label><br>
+
+            <p> How many breeds of cat can you recognize? </p>
+            <input type="radio" required id="breed_none" name="breeds", value="none"><label for="breed_none"> Less than 5 </label><br>
+            <input type="radio" required id="breed_15" name="breeds", value="none"><label for="breed_15"> 5-15 breeds </label><br>
+            <input type="radio" required id="breed_25" name="breeds", value="none"><label for="breed_25"> 15-25 breeds </label><br>
+            <input type="radio" required id="breed_more" name="breeds", value="none"><label for="breed_more"> more than 25 </label><br>
+
+            <center><input type="submit" value="Submit"></center>
+        </form>
+    </body>
+</html>
