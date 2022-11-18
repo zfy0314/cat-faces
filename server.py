@@ -83,6 +83,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         elif self.path.startswith("/favicon"):
             self.send_response(200)
             self.end_headers()
+            self.wfile.write(open("images/favicon.ico", "rb").read())
 
         else:
             self.send_response(400)
